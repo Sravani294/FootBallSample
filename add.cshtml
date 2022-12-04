@@ -1,0 +1,50 @@
+﻿@model FootballLep.Models.Match
+@{
+    ViewBag.Title = "add";
+}
+
+<h2>add</h2>
+@using (Html.BeginForm("Addnewmatchdetails", "Home"))
+
+{
+
+    <p>
+
+        MatchID: @Html.TextBoxFor(a => a.MatchID)
+
+    </p>
+
+
+
+    <p>
+
+        TeamName1: @Html.TextBoxFor(a => a.TeamName1)
+
+    </p>
+    <p>
+
+        Teamname2: @Html.TextBoxFor(a => a.Teamname2)
+
+    </p>
+
+
+
+    <p>
+
+        Status: @Html.TextBoxFor(a => a.StatusTeam)
+
+    </p>
+
+    <p>
+
+        WinningTeam: @Html.TextBoxFor(a => a.WinningTeam)
+
+    </p>
+
+
+    <input type="submit" value="ADD DETAILS" />
+
+
+
+}
+

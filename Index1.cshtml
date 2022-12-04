@@ -1,0 +1,79 @@
+﻿@model IEnumerable<FootballLep.Models.Match>
+    
+@{
+    ViewBag.Title = "Index1";
+}
+
+<h2>Index1</h2>
+
+@Html.ActionLink("AddMatchDetails", "Add")
+
+
+@foreach (var a in Model)
+{
+    <p>
+
+
+
+        Match ID : @a.MatchID
+
+
+
+    </p>
+
+
+
+    <p>
+
+
+
+        Team Name-1 : @a.TeamName1
+
+
+
+    </p>
+    <p>
+
+
+
+        Team Name-2 : @a.Teamname2
+
+
+
+    </p>
+    <p>
+
+
+
+        Status of the Match : @a.StatusTeam
+
+
+
+    </p>
+    
+    <p>
+
+
+
+        Won Team-Name : @a.WinningTeam
+
+
+
+    </p>
+    @Html.ActionLink("Edit","Edit") <span>&nbsp;</span>
+
+    @Html.ActionLink("Delete","Delete")
+
+
+
+
+
+    <hr />
+
+
+
+
+
+
+}
+
